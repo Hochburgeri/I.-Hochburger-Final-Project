@@ -1,0 +1,310 @@
+/*Style for body*/
+
+body {
+    margin: 0;
+    position: relative;
+    background-image: url("Assets/border.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+/*Mobile nav bar*/
+
+.logo h1 {
+    font-size: 1.5rem;
+}
+
+/*"Faux Cafe Mozart" title*/
+
+.maintitle {
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 25px;
+}
+
+/*Main title with text underneath*/
+
+.maintitle h1 {
+    font-size: 4.5rem;
+    text-shadow: 0.05em 0 black,
+    0 0.05em black,
+    -0.05em 0 black,
+    0 -0.05em black,
+    -0.05em -0.05em black,
+    -0.05em 0.05em black,
+    0.05em -0.05em black,
+    0.05em 0.05em black;
+}
+
+.maintitle p {
+    font-size: 1rem;
+    background: red;
+    text-shadow: 0.05em 0 black,
+    0 0.05em black,
+    -0.05em 0 black,
+    0 -0.05em black,
+    -0.05em -0.05em black,
+    -0.05em 0.05em black,
+    0.05em -0.05em black,
+    0.05em 0.05em black;
+}
+
+/*Regular nav bar*/
+
+.nav-container {
+    width: 85%;
+    margin:auto;
+}
+
+.topnav {
+overflow: hidden;
+background-color: #212931;
+height: 70px;
+}
+
+.topnav a {
+height: 75px;
+float: left;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 1.5rem;
+}
+
+.topnav a:hover {
+background-color: #ddd;
+color: black;
+}
+
+.topnav a.active {
+background-color: white;
+color: black;
+}
+
+.topnav-right {
+float: right;
+color: white;
+}
+
+/*Main container*/
+
+.main {
+    width: 85%;
+    height: 100%;
+    margin: auto;
+    background-color: white;
+    color: black;
+}
+
+.whole {
+    position: relative;
+}
+
+/*This is the styling for main index page*/
+
+#cafetitle {
+    text-align: center;
+    padding: 50px;
+}
+
+/*Responsive Image Grid*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /*Creates four equal columns that sit next to each other*/
+
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    padding: 8px;
+  }
+
+  input[type=submit] {
+    background-color: #212931;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: center;
+    margin-left: 540px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+/*Information section*/
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.info > iframe {
+    width: 200px;
+    height: 200px;
+}
+
+/*Hours of operation*/
+
+.hours {
+    background-color: white;
+    width: 400px;
+    height: 250px;
+    padding-top: 25px;
+    justify-content: center;
+}
+
+/*Location information*/
+
+.location {
+    background-color: white;
+    width: 400px;
+    height: 250px;
+    padding-top: 25px;
+}
+
+.map {
+    width: 400px;
+    height: 300px;
+}
+
+/*This is the footer*/
+
+.footer {
+    overflow: hidden;
+    background-color: #212931;
+    height: 70px;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 732px) {
+    .topnav {display: none;}
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+
+  }
+  body  {
+      font-family: 'Arial' , sans-serif;
+  }
+  nav {
+      background: #212931;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+  }
+  nav .mainMenu {
+      display: flex;
+      list-style: none;
+  }
+  nav .mainMenu li a {
+      display: inline-block;
+      padding: 15px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 1.5rem;
+  }
+  nav .mainMenu li a:hover {
+      background: rgb(255,94,0);
+  }
+  nav .openMenu {
+      font-size: 2rem;
+      margin: 20px;
+      display: none;
+      cursor: pointer;
+  }
+  nav .mainMenu .closeMenu , .icons i {
+      font-size: 2rem;
+      display: none;
+      cursor: pointer;
+  }
+  .fa-facebook:hover {color: rgb(0, 110, 255);}
+  .fa-instagram:hover {color: rgb(255, 0, 191);}
+
+  nav .logo {
+      margin: 6px;
+      font-size: 25px;
+      cursor: pointer;
+  }
+@media(max-width: 800px){
+      nav .mainMenu {
+          height: 100vh;
+          position: fixed;
+          top: 0;
+          right: 0;
+          left: 0;
+          z-index: 10;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background: #212931;
+          transition: top 1s ease;
+          display: none;
+      }
+      nav .mainMenu .closeMenu {
+          display: block;
+          position: absolute;
+          top: 20px;
+          right: 20px;
+
+      }
+      nav .openMenu {
+          display: block;
+      }
+      nav .mainMenu li a:hover {
+          background: none;
+          color: rgb(255, 123, 0);
+          font-size: 1.6rem;
+      }
+      .icons i {
+          display: inline-block;
+          padding: 12px;
+      }
+  }
+
+}
+@media screen and (min-width:733px) and (max-width:2500px) {
+  nav {display: none;}
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }

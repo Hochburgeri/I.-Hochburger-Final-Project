@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--The images and logo in this website are from cafemozartflorida.com-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Mozart</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Mobile nav bar-->
+    <nav>
+        <div class="logo"><h1>Disclaimer: This is not the real cafe mozart website, this is a school project</h1></div>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="online.html">Order Online</a></li>
+            <div class="closeMenu"><i class="fa fa-times"></i></div>
+            <span class="icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+            </span>
+        </ul>
+    </nav>
+    <!--Main title with text underneath-->
+    <div class="whole">
+        <div class="maintitle">
+            <h1>Cafe Mozart</h1>
+            <p>Disclaimer: This is not the real cafe mozart website, this is a school project</p>
+        </div>
+    <!--Regular nav bar-->
+        <div class="nav-container">
+            <div class="topnav">
+                <a class="active" href="index.html">Home</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="menu.html">Menu</a>
+                <a href="order.html">Order Online</a>
+                <div class="topnav-right">
+                    <a>(000) 867-5309</a>
+                    <a href="#" ><i class="fab fa-facebook"></i></a>
+                    <a href="#" ><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <!--Bakery logo with cafe image underneath-->
+        <div class="main">
+            <div id="cafetitle">
+                <img src="Assets/bakerylogo.png" alt="Cafe Mozart"/>
+            </div>
+            <div class="row">
+                <div class="column">
+                  <img src="Assets/imggrid1.jpeg">
+                  <img src="Assets/imggrid2.jpeg">
+                  <img src="Assets/imggrid3.jpeg">
+                  <img src="Assets/imggrid4.jpeg">
+                  <img src="Assets/imggrid5.jpeg">
+                </div>
+                <div class="column">
+                  <img src="Assets/imggrid6.jpeg">
+                  <img src="Assets/imggrid7.jpeg">
+                  <img src="Assets/imggrid8.jpeg">
+                  <img src="Assets/imggrid9.jpeg">
+                  <img src="Assets/imggrid20.jpeg">
+                </div>
+                <div class="column">
+                  <img src="Assets/imggrid10.jpeg">
+                  <img src="Assets/imggrid11.jpeg">
+                  <img src="Assets/imggrid12.jpeg">
+                  <img src="Assets/imggrid13.jpeg">
+                  <img src="Assets/imggrid14.jpeg">
+                </div>
+                <div class="column">
+                  <img src="Assets/imggrid15.jpeg">
+                  <img src="Assets/imggrid16.jpeg">
+                  <img src="Assets/imggrid17.jpeg">
+                  <img src="Assets/imggrid18.jpeg">
+                  <img src="Assets/imggrid19.jpeg">
+                </div>
+              </div>
+            <div id="viewbtn">
+                <a href="menu.html"><input type="submit" value="View Our Menu"></a>
+            </div>
+            <!--Hours of Operation and Location-->
+            <div class="info">
+                <div class="hours" id="holiday-hours">
+                    <h3>Hours of Operation</h3>
+                    <p>Sunday</br>8:00am-2:00pm</br>
+                    Monday</br>-CLOSED-</br>
+                    Tuesday-Saturday</br>7:00am-3:30pm</p>
+                    <button onclick="holiday()">Holiday Hours</button>
+                </div>
+                <!--Functioning google map-->
+                <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3528.203081972832!2d-82.64114968493513!3d27.83429088273954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2e6a560f89481%3A0x42b62aedaeb0acc6!2sCafe%20Mozart%20German%20Bakery!5e0!3m2!1sen!2sus!4v1636684099045!5m2!1sen!2sus" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+            </div>
+                <!--Footer-->
+            <div class="footer">
+                <p><i class="fas fa-mobile-alt"></i>Call Us At: (000) 867-5309</br>Disclaimer: This is not the real cafe mozart website, this is a school project</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

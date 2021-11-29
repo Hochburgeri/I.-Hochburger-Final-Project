@@ -1,0 +1,321 @@
+/*Style for body*/
+
+body {
+    margin: 0;
+    position: relative;
+    background-image: url("Assets/border.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+/*Mobile nav bar*/
+
+.logo h1 {
+    font-size: 1.5rem;
+}
+
+/*"Faux Cafe Mozart" title*/
+
+.maintitle {
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 25px;
+}
+
+/*Main title with text underneath*/
+
+.maintitle h1 {
+    font-size: 4.5rem;
+    text-shadow: 0.05em 0 black,
+    0 0.05em black,
+    -0.05em 0 black,
+    0 -0.05em black,
+    -0.05em -0.05em black,
+    -0.05em 0.05em black,
+    0.05em -0.05em black,
+    0.05em 0.05em black;
+}
+
+.maintitle p {
+    font-size: 1rem;
+    background: red;
+    text-shadow: 0.05em 0 black,
+    0 0.05em black,
+    -0.05em 0 black,
+    0 -0.05em black,
+    -0.05em -0.05em black,
+    -0.05em 0.05em black,
+    0.05em -0.05em black,
+    0.05em 0.05em black;
+}
+
+/*Regular nav bar*/
+
+.nav-container {
+    width: 85%;
+    margin:auto;
+}
+
+.topnav {
+overflow: hidden;
+background-color: #212931;
+height: 70px;
+}
+
+.topnav a {
+height: 75px;
+float: left;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 1.5rem;
+}
+
+.topnav a:hover {
+background-color: #ddd;
+color: black;
+}
+
+.topnav a.active {
+background-color: white;
+color: black;
+}
+
+.topnav-right {
+float: right;
+color: white;
+}
+
+/*Main container*/
+
+.main {
+    width: 85%;
+    height: 100%;
+    margin: auto;
+    background-color: white;
+    color: black;
+}
+
+.whole {
+    position: relative;
+}
+
+/*This is the styling for menu page*/
+
+.title {
+text-align: center;
+margin: auto;
+margin-bottom: 25px;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+
+  /* Add rounded corners to the top left and the top right corner of the image */
+img {
+    border-radius: 5px 5px 0 0;
+}
+
+.card-box {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.card1, .card2, .card3, .card4 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+}
+  
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/*Order Form*/
+
+* {
+    box-sizing: border-box;
+  }
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #212931;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/*Footer*/
+
+.footer {
+    overflow: hidden;
+    background-color: #212931;
+    height: 70px;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+}
+
+/*Media Query*/
+
+@media screen and (min-width: 0px) and (max-width: 732px) {
+    .topnav {display: none;}
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+
+  }
+  body  {
+      font-family: 'Arial' , sans-serif;
+  }
+  nav {
+      background: #212931;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+  }
+  nav .mainMenu {
+      display: flex;
+      list-style: none;
+  }
+  nav .mainMenu li a {
+      display: inline-block;
+      padding: 15px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 1.5rem;
+  }
+  nav .mainMenu li a:hover {
+      background: rgb(255,94,0);
+  }
+  nav .openMenu {
+      font-size: 2rem;
+      margin: 20px;
+      display: none;
+      cursor: pointer;
+  }
+  nav .mainMenu .closeMenu , .icons i {
+      font-size: 2rem;
+      display: none;
+      cursor: pointer;
+  }
+  .fa-facebook:hover {color: rgb(0, 110, 255);}
+  .fa-instagram:hover {color: rgb(255, 0, 191);}
+
+  nav .logo {
+      margin: 6px;
+      font-size: 25px;
+      cursor: pointer;
+  }
+@media(max-width: 800px){
+      nav .mainMenu {
+          height: 100vh;
+          position: fixed;
+          top: 0;
+          right: 0;
+          left: 0;
+          z-index: 10;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background: #212931;
+          transition: top 1s ease;
+          display: none;
+      }
+      nav .mainMenu .closeMenu {
+          display: block;
+          position: absolute;
+          top: 20px;
+          right: 20px;
+
+      }
+      nav .openMenu {
+          display: block;
+      }
+      nav .mainMenu li a:hover {
+          background: none;
+          color: rgb(255, 123, 0);
+          font-size: 1.6rem;
+      }
+      .icons i {
+          display: inline-block;
+          padding: 12px;
+      }
+  }
+
+}
+@media screen and (min-width:733px) and (max-width:2500px) {
+  nav {display: none;}
+}
+
+ /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+ @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+}
