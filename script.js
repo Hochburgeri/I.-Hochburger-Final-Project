@@ -41,7 +41,7 @@ function validateFormSuccess() {
   
   for (let i = 0; i < 10; i++) {
     function holiday() {
-      document.getElementById("holiday-hours").innerHTML = "<h3>HOURS OF OPERATION</h3> <br> Chrismas day - Closed. <br> Chrismas eve - 8:00am-12:00pm. <br> Thanksgiving day - Closed. <br> Halloween - 8:00am-2:00pm. <br> Veterans Day - 8:00am-2:00pm. <br>";
+      document.getElementById("holiday-hours").innerHTML = "<h3>HOURS OF OPERATION</h3> <br> Chrismas Day - Closed. <br> Chrismas Eve - 8:00am-12:00pm. <br> Thanksgiving Day - Closed. <br> Halloween - 8:00am-2:00pm. <br> Veterans Day - 8:00am-2:00pm. <br>";
     }
     console.log("Success");
   }
