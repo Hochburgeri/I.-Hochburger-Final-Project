@@ -26,6 +26,8 @@ function validateForm() {
    
 }
 
+//alerts user that order was placed
+
 function validateFormSuccess() {
     let x = document.forms["myForm"]["fname", "lname", "phone", "time", "subject"].value;
   
@@ -34,6 +36,8 @@ function validateFormSuccess() {
       return false;
     }
   }
+
+//holiday hours
   
   for (let i = 0; i < 10; i++) {
     function holiday() {
@@ -41,6 +45,8 @@ function validateFormSuccess() {
     }
     console.log("Success");
   }
+
+//about us read more
   
   for (let i = 0; i < 10; i++) {
     function readmore() {
